@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Student Attendance</string>
+
+    <string name="base_url" translatable="false">http://parxsys.com/accounting/</string>
+
+    <!--Keys-->
+    <string name="emp_id" translatable="false">emp_id</string>
+    <string name="emp_name" translatable="false">emp_name</string>
+    <string name="from_dt" translatable="false">from_dt</string>
+    <string name="to_dt" translatable="false">to_dt</string>
+    <string name="selected_month" translatable="false">selected_month</string>
+    <string name="selected_year" translatable="false">selected_year</string>
+    <string name="numDays" translatable="false">numDays</string>
+
+    <string-array name="months">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <string-array name="years">
+        <item>2010</item>
+        <item>2011</item>
+        <item>2012</item>
+        <item>2013</item>
+        <item>2014</item>
+        <item>2015</item>
+        <item>2016</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+    </string-array>
+
+</resources>

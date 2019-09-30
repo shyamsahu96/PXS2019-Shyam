@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="attendance_text">10sp</dimen>
+    <dimen name="attendance_report_header">15sp</dimen>
+    <dimen name="attendance_table_header">13sp</dimen>
+
+</resources>

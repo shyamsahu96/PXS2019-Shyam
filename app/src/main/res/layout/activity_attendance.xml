@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    tools:context=".AttendanceActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="1dp"
+        android:background="@color/attendance_color"
+        android:gravity="center"
+        android:text="Day of the Month"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/attendance_table_header"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvHeader"
+        tools:layout_editor_absoluteY="51dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="1dp"
+        android:background="@color/attendance_color"
+        android:gravity="center"
+        android:text="Hours Logged"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/attendance_table_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@id/tvHeader" />
+
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Report for the month"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/attendance_report_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvAttendance"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@id/hoursLogged"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/hoursLogged"
+        style="@style/tabularTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Hours Logged"
+        app:layout_constraintBottom_toTopOf="@id/hoursLoggedValue"
+        app:layout_constraintEnd_toStartOf="@+id/daysPresent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/daysPresent"
+        style="@style/tabularTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Days Present"
+        app:layout_constraintBottom_toTopOf="@id/daysPresentValue"
+        app:layout_constraintEnd_toStartOf="@+id/daysAbsent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/hoursLogged" />
+
+    <TextView
+        android:id="@+id/daysAbsent"
+        style="@style/tabularTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Days Absent"
+        app:layout_constraintBottom_toTopOf="@id/daysAbsentValue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/daysPresent" />
+
+    <TextView
+        android:id="@+id/hoursLoggedValue"
+        style="@style/tabularThemeContent"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="Hours Logged"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/daysPresentValue"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/daysPresentValue"
+        style="@style/tabularThemeContent"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="Days Present"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/daysAbsentValue"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/hoursLogged" />
+
+    <TextView
+        android:id="@+id/daysAbsentValue"
+        style="@style/tabularThemeContent"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="Days Absent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/daysPresentValue" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tvSide1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="1dp"
+        android:layout_weight="1"
+        android:background="@color/attendance_color"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="text1"
+        android:textSize="@dimen/attendance_text" />
+
+    <TextView
+        android:id="@+id/tvSide2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+        android:layout_weight="1"
+        android:background="@color/attendance_color"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="text2"
+        android:textSize="@dimen/attendance_text" />
+
+
+</LinearLayout>
