@@ -90,9 +90,9 @@ public class AttendanceViewModel extends AndroidViewModel {
 
     public void getAttendanceReport(String emp_id, String from_dt, String to_dt, int month, int year) {
 
-        RequestBody body_emp = RequestBody.create(MediaType.parse("text/plain"), emp_id);
-        RequestBody from = RequestBody.create(MediaType.parse("text/plain"), from_dt);
-        RequestBody to = RequestBody.create(MediaType.parse("text/plain"), to_dt);
+        RequestBody body_emp = RequestBody.create(emp_id, MediaType.parse("text/plain"));
+        RequestBody from = RequestBody.create(from_dt, MediaType.parse("text/plain"));
+        RequestBody to = RequestBody.create(to_dt, MediaType.parse("text/plain"));
         attendanceApi.getAttendanceOfStudent(body_emp, from, to).enqueue(new Callback<List<Attendance>>() {
             @Override
             public void onResponse(@NotNull Call<List<Attendance>> call, @NotNull Response<List<Attendance>> response) {
